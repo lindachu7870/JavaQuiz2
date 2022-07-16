@@ -9,20 +9,24 @@ Create a class `WuTangConcatenator` which uses a composite `Integer` to identify
  */
 
 public class WuTangConcatenator {
+
+    private Integer concatenator;
+
     public WuTangConcatenator(Integer input) {
-        
+        this.concatenator = input;
     }
 
     public Boolean isWu() {
-
-        return null;
+        return concatenator % 3 == 0;
     }
 
     public Boolean isTang() {
-        return null;
+        return concatenator % 5 == 0;
     }
 
     public Boolean isWuTang() {
-        return null;
+        if (concatenator % 3 == 0 && concatenator % 5 == 0) {
+            return true;
+        } else return false;
     }
 }
