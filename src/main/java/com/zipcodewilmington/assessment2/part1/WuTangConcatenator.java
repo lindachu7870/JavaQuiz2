@@ -10,23 +10,21 @@ Create a class `WuTangConcatenator` which uses a composite `Integer` to identify
 
 public class WuTangConcatenator {
 
-    private Integer concatenator;
+    private Integer concat;
 
     public WuTangConcatenator(Integer input) {
-        this.concatenator = input;
+        this.concat = input;
     }
 
     public Boolean isWu() {
-        return concatenator % 3 == 0;
+        return concat % 3 == 0;
     }
 
     public Boolean isTang() {
-        return concatenator % 5 == 0;
+        return concat % 5 == 0;
     }
 
     public Boolean isWuTang() {
-        if (concatenator % 3 == 0 && concatenator % 5 == 0) {
-            return true;
-        } else return false;
+       return concat % 3 == 0 && concat % 5 == 0;
     }
 }

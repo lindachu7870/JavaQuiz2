@@ -16,6 +16,7 @@ public class BasicUtilities {
     }
 
     public Boolean startsWith(String string, Character character) {
-        return string.startsWith(String.valueOf(character));
+       return character.equals(string.toLowerCase().charAt(0)) || character.equals(string.toUpperCase().charAt(0));
     }
+    // return string.startsWith(String.valueOf(character));
 }

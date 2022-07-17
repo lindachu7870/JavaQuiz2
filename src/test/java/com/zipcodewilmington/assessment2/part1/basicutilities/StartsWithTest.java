@@ -12,7 +12,7 @@ public class StartsWithTest {
 
     @Test
     public void test2() {
-        test("the", 't', true);
+        test("The", 't', true);
     }
 
     @Test

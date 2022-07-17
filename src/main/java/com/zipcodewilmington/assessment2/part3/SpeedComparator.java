@@ -6,6 +6,10 @@ public class SpeedComparator implements Comparator<Animal> {
 
     @Override
     public int compare(Animal o1, Animal o2) {
-        return 0;
+        if (o1.getSpeed() == o2.getSpeed()) {
+            return 0;
+        } else if (o1.getSpeed() > o2.getSpeed()) {
+            return -1;
+        } else return 1;
     }
 }

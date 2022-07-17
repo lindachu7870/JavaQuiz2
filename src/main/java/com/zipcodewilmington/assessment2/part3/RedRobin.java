@@ -11,7 +11,7 @@ public class RedRobin extends Bird {
     }
 
     // setter
-    public void setMigrationMonth() {
+    public void setMigrationMonth(String migrationMonth) {
         this.migrationMonth = migrationMonth;
     }
 

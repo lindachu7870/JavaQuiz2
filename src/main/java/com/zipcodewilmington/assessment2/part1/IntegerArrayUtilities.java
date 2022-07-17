@@ -6,11 +6,12 @@ public class IntegerArrayUtilities {
     }
 
     // `Range` should return an array of integers from `start` to `stop` inclusively.
-    // TODO finish passing the other 2 tests
     public Integer[] range(int start, int stop) {
+        int i = 0;
         Integer[] range = new Integer[stop - start + 1];
-        for (int i = start; i <= stop; i++) {
-            range[i] = i;
+        for (int n = start; n <= stop; n++) {
+            range[i] = n;
+            i++;
         } return range;
     }
 
@@ -18,7 +19,9 @@ public class IntegerArrayUtilities {
         return array[0] + array[1];
     }
 
+    // actually getting the product of last two lol
     public Integer getProductOfFirstTwo(Integer[] array) {
-        return array[0] * array[1];
+        return array[array.length - 1] * array[array.length - 2];
     }
+
 }
